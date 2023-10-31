@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 10;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header-toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ff96c9;
+}
+
+.header-toolbar .left{
+    display: flex;
+    align-items: center;
+}
+
+.header-toolbar .left img{
+    width: 60px;
+}
+
+.header-nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.header-nav ul li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    line-height: 2em;
+}
+
+.about h1{
+    font-size: xx-large;
+}
+
+.about p{
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+.bolos-grid{
+    width: 50%;
+    background-color: #ffdced;
+    padding: 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.bolos-grid img{
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-media-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-media-item img{
+    width: 50px;
+}
+
+.social-media-item b{
+    padding-left: 5px;
+}
+
+.bolos-all{
+    padding: 2rem 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.bolo-item{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.bolo-item img{
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bolo-item button{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #fccbe3;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+    padding: .3rem;
+}
+
+@media screen and (max-width: 768px){
+	.main-content{
+        flex-direction: column-reverse;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .bolos-grid{
+        width: 100%;
+    }
+}
